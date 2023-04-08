@@ -7,6 +7,7 @@
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,6 +15,10 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -25,16 +30,19 @@
           <a href="./index.html" class="logo-color link"
             >Web<span class="logo"> Studio</span></a
           >
+
           <ul class="header-list list">
-            <li class="">
+            <li class="header-list-item">
               <a href="./index.html" class="header-link link"
                 ><span class="current">Studio</span></a
               >
             </li>
-            <li class="">
+
+            <li class="header-list-item">
               <a href="./portfolio.html" class="header-link link">Portfolio</a>
             </li>
-            <li class="">
+
+            <li class="header-list-item">
               <a href="" class="header-link link">Contacts</a>
             </li>
           </ul>
@@ -61,7 +69,9 @@
       <section class="hero-section">
         <div class="container hero-section-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-hero">Order Service</button>
+          <button data-modal-open type="button" class="button-hero">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- second section -->
@@ -440,5 +450,21 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="hero-backdrop is-hidden">
+      <div class="hero-modal">
+        <div class="modal-button-position">
+          <button data-modal-close type="button" class="modal-button">
+            <svg class="backdrop-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

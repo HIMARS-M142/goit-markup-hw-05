@@ -7,6 +7,8 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -15,6 +17,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -25,16 +31,19 @@
           <a href="./index.html" class="logo-color link"
             >Web<span class="logo"> Studio</span></a
           >
+
           <ul class="header-list list">
-            <li class="">
-              <a href="./index.html" class="header-link link">Studio</a>
+            <li class="header-list-item">
+              <a href="./index.html" class="header-link link"
+                >Studio</a
+              >
             </li>
-            <li class="">
-              <a href="./portfolio.html" class="header-link link"
-                ><span class="current">Portfolio</span>
-              </a>
+
+            <li class="header-list-item">
+              <a href="./portfolio.html" class="header-link link"><span class="current">Portfolio</span></a>
             </li>
-            <li class="">
+
+            <li class="header-list-item">
               <a href="" class="header-link link">Contacts</a>
             </li>
           </ul>
@@ -78,116 +87,162 @@
           </ul>
 
           <!-- Our work -->
-          <ul class="work-portfolio list">
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link"
-                ><img
-                  src="./images/banking-app.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="banking-app"
-                />
-                <h2 class="title">Banking App Interface Concept</h2>
-                <p class="text">App</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link">
-                <img
-                  src="./images/cachless-payment.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="cachless-payment"
-                />
-                <h2 class="title">Cashless Payment</h2>
-                <p class="text">Marketing</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link"
-                ><img
-                  src="./images/meditation-app.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="meditation-app"
-                />
-                <h2 class="title">Meditation App</h2>
-                <p class="text">App</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link"
-                ><img
-                  src="./images/taxi-service.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="taxi-service"
-                />
-                <h2 class="title">Taxi Service</h2>
-                <p class="text">Marketing</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link">
-                <img
-                  src="./images/screen-ilustration.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="screen-ilustration"
-                />
-                <h2 class="title">Screen Illustrations</h2>
-                <p class="text">Design</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link">
-                <img
-                  src="./images/online-courses.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="online-courses"
-                />
-                <h2 class="title">Online Courses</h2>
-                <p class="text">Marketing</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link">
-                <img
-                  src="./images/inst-stories.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="inst-stories"
-                />
-                <h2 class="title">Instagram Stories Concept</h2>
-                <p class="text">Design</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link">
-                <img
-                  src="./images/organic-food.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="organic-food"
-                />
-                <h2 class="title">Organic Food</h2>
-                <p class="text">Web Site</p></a
-              >
-            </li>
-            <li class="work-portfolio-list">
-              <a href="" class="work-portfolio-link link">
-                <img
-                  src="./images/fresh-coffe.jpg"
-                  class="work-portfolio-img"
-                  width="360"
-                  alt="fresh-coffe"
-                />
-                <h2 class="title">Fresh Coffee</h2>
-                <p class="text">Web Site</p></a
-              >
-            </li>
-          </ul>
+          <div class="our-work-container">
+            <ul class="work-portfolio list">
+          
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link"
+                  > <div class="portfolio-img-backgroun"><img
+                    src="./images/banking-app.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="banking-app"
+                  />
+                  <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                  <h2 class="title">Banking App Interface Concept</h2>
+                  <p class="text">App</p></a
+                >
+              </li>
+
+             
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link">
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/cachless-payment.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="cachless-payment"
+                  />
+                  <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+                  <h2 class="title">Cashless Payment</h2>
+                  <p class="text">Marketing</p></a
+                >
+              </li>
+
+          
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link"
+                  >
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/meditation-app.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="meditation-app"
+                  />
+                  <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+                  <h2 class="title">Meditation App</h2>
+                  <p class="text">App</p></a
+                >
+              </li>
+
+              
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link"
+                  >
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/taxi-service.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="taxi-service"
+                  />
+                <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+              </div>
+                  <h2 class="title">Taxi Service</h2>
+                  <p class="text">Marketing</p></a
+                >
+              </li>
+
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link">
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/screen-ilustration.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="screen-ilustration"
+                  />
+                  <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+                  <h2 class="title">Screen Illustrations</h2>
+                  <p class="text">Design</p></a
+                >
+              </li>
+
+             
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link">
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/online-courses.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="online-courses"
+                  />
+                <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+              </div>
+                  <h2 class="title">Online Courses</h2>
+                  <p class="text">Marketing</p></a
+                >
+              </li>
+
+              
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link">
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/inst-stories.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="inst-stories"
+                  />
+                <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+              </div>
+                  <h2 class="title">Instagram Stories Concept</h2>
+                  <p class="text">Design</p></a
+                >
+              </li>
+
+             
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link">
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/organic-food.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="organic-food"
+                  />
+                <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+              </div>
+                  <h2 class="title">Organic Food</h2>
+                  <p class="text">Web Site</p></a
+                >
+              </li>
+              
+              <li class="work-portfolio-list">
+                <a href="" class="work-portfolio-link link">
+                  <div class="portfolio-img-backgroun">
+                  <img
+                    src="./images/fresh-coffe.jpg"
+                    class="work-portfolio-img"
+                    width="360"
+                    alt="fresh-coffe"
+                  />
+                  <p class="portfolio-bcg-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                  <h2 class="title">Fresh Coffee</h2>
+                  <p class="text">Web Site</p></a
+                >
+              </li>
+         </div>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -238,5 +293,10 @@
         </div>
       </div>
     </footer>
+     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
